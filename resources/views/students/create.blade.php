@@ -6,32 +6,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f0f2f5;
+            background-color: #fff;
         }
         .student-form {
             /* margin-top: 50px; */
-            padding: 40px;
-            background-color: #fbf8f8;
+            padding: 30px;
+            background-color: #f4f4f4;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 7px rgba(43, 43, 43, 0.1);
+            
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mt-3">
         <div class="col-md-10">
             <div class="d-flex justify-content-between align-items-center mb-2">
-                <h3 class="mb-0">Add New Student</h3>
+                <h4 class="mb-0">Add New Student</h4>
                 <a href="{{ route('students.index') }}" class="btn btn-primary">&larr; Back</a>
             </div>
 
             <div class="student-form">
-
-              
-
-
                 @if ($errors->any())
                     <div class="alert alert-danger">
                         <ul class="mb-0">
@@ -100,9 +97,6 @@
         </div>
     </div>
 </div>
-
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
